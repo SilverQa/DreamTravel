@@ -7,8 +7,10 @@
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .images {
-    height: 150px;
+    height: 200px;
+    width: 300px;
 }
 h3 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -16,7 +18,10 @@ h3 {
     color: deeppink;
     text-align: left;
 }
-
+head {
+    position: fixed;
+    top: 0;
+}
 .red-heading {
     color: red;
 }
@@ -37,6 +42,9 @@ h3 {
     opacity: 20%;
 }
 .navbar {
+    /* float: inline-start; */
+    /* position:fixed; */
+    /* top: 0; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -47,9 +55,10 @@ h3 {
 .navbutton {
     background-color: black;
     color:deeppink;
+    /* text-align: center; */
     /* width: 100%; */
-    /* margin: 0px; */
-    /* padding: 5px; */
+    /* margin: 5px; */
+    /* padding: 10px; */
 }
 .article  {   /* formats text and picture in a flexbox */
     display: flex;
@@ -60,19 +69,22 @@ h3 {
     align-items: center;
     color: midnightblue;
     background-color: mediumseagreen;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
     font-size: medium;
 }
 
-.article2  {   /* formats text and picture in a flexbox */
+.article2  {   /* formats text and picture in a flexbox by row*/
     display: flex;
     flex-direction: row-reverse;
     /* justify-content: center;
     width: min-content; */
-    /* height: 10%; */
     /* align-items: center; */
     color: midnightblue;
     background-color: mediumseagreen;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-size: large; */
+    border: black;
+}
 
-    font-size: large;
+.articlewrap {
+    display: flex;
+    flex-direction: column;
 }
